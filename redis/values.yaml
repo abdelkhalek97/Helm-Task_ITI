@@ -1,18 +1,16 @@
 # Default values for redis.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
+port: 6379
+
 redisLabel:
   app: redis
 
 redisService: 
   name: redis
-  targetport: 6379
-  port: 6379
-
 
 redisContainer:
   name: redis
-  port: 6379
   image: docker.io/redis
 
 replicaCount: 1

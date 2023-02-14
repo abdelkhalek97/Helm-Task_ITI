@@ -17,4 +17,4 @@ spec:
       - name: {{ .Values.redisContainer.name }}
         image: {{ .Values.redisContainer.image }}
         ports:
-        - containerPort: {{ .Values.redisContainer.port }}
+        - containerPort: {{ .Values.port }}
